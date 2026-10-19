@@ -1,0 +1,58 @@
+# SupportDesk RAG Configuration
+
+# OpenAI Configuration
+openai:
+  api_key_env: OPENAI_API_KEY
+  embedding_model: text-embedding-3-small
+  embedding_dimensions: 4096  # Updated to accommodate qwen3-embedding:latest
+  batch_size: 100
+
+# Stage 1 (Ingest) Configuration
+ingest:
+  chunk_size: 1000
+  chunk_overlap: 150
+  chunk_strategy: recursive  # recursive, token, semantic
+  clean_pii: true
+
+# Stage 2 (Embed) Configuration
+embed:
+  embedding_model: qwen3-embedding:latest  # Updated to match OLLAMA_EMBEDDING_MODEL
+  batch_size: 100
+  output_directory: data/embedded
+
+# Stage 3 (Store) Configuration
+store:
+  qdrant:
+    host: localhost
+    port: 6333
+    collection_name: tickets
+    metrics: false
+  vector_db_path: data/vector_db
+  collection_name: tickets
+
+# Stage 4 (Retrieve) Configuration
+retrieve:
+  vector_weight: 0.7  # Weight for vector search results
+  bm25_weight: 0.3    # Weight for BM25 search results
+  k_rrf: 60           # RRF fusion parameter (reciprocal rank)
+  vector_top_k: 20    # Candidates from vector search
+  bm25_top_k: 20      # Candidates from BM25 search
+
+# Stage 5 (Re-rank) Configuration
+rerank:
+  enabled: false      # Disable re-ranking for domain-specific use cases (no fine-tuned model)
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2  # Cross-encoder model
+  top_k: 10           # Number of results to return after re-ranking
+  min_score: -5.0     # Minimum rerank score to include
+  batch_size: 32      # Batch size for processing
+
+# Stage 6 (Ground) Configuration
+ground:
+  max_passages: 5     # Maximum number of passages to include in grounded context
+  max_tokens: 4000    # Maximum token count for grounded context
+  min_relevance_score: -3.0  # Minimum rerank score to include
+
+# Logging Configuration
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

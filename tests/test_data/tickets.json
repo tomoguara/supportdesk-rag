@@ -1,0 +1,26 @@
+[
+  {
+    "ticket_id": "T001",
+    "subject": "Password reset not working",
+    "description": "Customer says password reset email is not arriving",
+    "product": "billing",
+    "priority": "medium",
+    "created_at": "2024-01-15T10:30:00Z"
+  },
+  {
+    "ticket_id": "T002",
+    "subject": "API authentication error",
+    "description": "User getting 401 unauthorized on API calls",
+    "product": "api",
+    "priority": "high",
+    "created_at": "2024-01-15T11:00:00Z"
+  },
+  {
+    "ticket_id": "T003",
+    "subject": "Feature request: PDF export",
+    "description": "Customer wants to export reports to PDF format",
+    "product": "reporting",
+    "priority": "low",
+    "created_at": "2024-01-15T12:00:00Z"
+  }
+]

@@ -1,0 +1,2779 @@
+{
+  "tickets": [
+    {
+      "ticket_id": "SEC186210",
+      "title": "[P1] Backup & Recovery: Question - service mesh",
+      "description": "Issue: API rate limiting is too aggressive. Environment: Backup & Recovery. Additional details: recovery time. This is affecting our production environment.",
+      "ticket_type": "Service Request",
+      "service": "Backup & Recovery",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-09-03T16:54:00",
+      "updated_at": "2026-08-12T06:57:00",
+      "user": {
+        "name": "Jordan Johnson",
+        "email": "jordan.johnson@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "security",
+        "staging",
+        "database"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "PERF075670",
+      "title": "[P2] Backup & Recovery: Problem - cache invalidation",
+      "description": "Request: Need help understanding error logs. Context: Backup & Recovery. Technical details: volume snapshot. This is affecting our production environment.",
+      "ticket_type": "Performance Issue",
+      "service": "Backup & Recovery",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-21T05:16:00",
+      "updated_at": "2026-09-05T22:00:00",
+      "user": {
+        "name": "Quinn Smith",
+        "email": "quinn.smith@company.com",
+        "team": "Operations",
+        "location": "Seattle"
+      },
+      "tags": [
+        "staging",
+        "api",
+        "integration"
+      ],
+      "attachments": 2,
+      "sla_minutes": 1440,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "INC909755",
+      "title": "[SLOW] User Access & Authentication: Request - API endpoint",
+      "description": "Issue: Search functionality returning incomplete results. Environment: User Access & Authentication. Additional details: session timeout. Please let us know if you need additional information.",
+      "ticket_type": "Service Request",
+      "service": "User Access & Authentication",
+      "severity": "High",
+      "priority": "P3",
+      "status": "Closed",
+      "created_at": "2026-09-11T23:25:00",
+      "updated_at": "2026-08-23T14:18:00",
+      "user": {
+        "name": "Jordan Brown",
+        "email": "jordan.brown@company.com",
+        "team": "HR",
+        "location": "Seattle"
+      },
+      "tags": [
+        "security",
+        "api"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SEC797367",
+      "title": "[EMERGENCY] Database Services: Question - API endpoint",
+      "description": "Issue: Database connection pool exhausted. Environment: Database Services. Additional details: query timeout. Please let us know if you need additional information.",
+      "ticket_type": "Incident",
+      "service": "Database Services",
+      "severity": "Critical",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-08-21T21:02:00",
+      "updated_at": "2026-08-24T19:20:00",
+      "user": {
+        "name": "Riley Davis",
+        "email": "riley.davis@company.com",
+        "team": "HR",
+        "location": "Seattle"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "John Doe",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SRV178377",
+      "title": "[ISSUE] User Access & Authentication: Issue - response latency",
+      "description": "Request: Need explanation of billing statement. Context: User Access & Authentication. Technical details: MFA authentication. Please let us know if you need additional information.",
+      "ticket_type": "Bug Report",
+      "service": "User Access & Authentication",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-09-02T21:35:00",
+      "updated_at": "2026-08-22T09:30:00",
+      "user": {
+        "name": "Alex Williams",
+        "email": "alex.williams@company.com",
+        "team": "Marketing",
+        "location": "Austin"
+      },
+      "tags": [
+        "production",
+        "integration"
+      ],
+      "attachments": 2,
+      "sla_minutes": 1440,
+      "assigned_to": "John Doe",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SRV400128",
+      "title": "[HELP] Monitoring & Alerts: Question - request timeout",
+      "description": "Request: Is there a scheduled maintenance window?. Context: Monitoring & Alerts. Technical details: alert threshold. This is affecting our production environment.",
+      "ticket_type": "Feature Request",
+      "service": "Monitoring & Alerts",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-09-10T16:25:00",
+      "updated_at": "2026-08-24T03:22:00",
+      "user": {
+        "name": "Quinn Miller",
+        "email": "quinn.miller@company.com",
+        "team": "Finance",
+        "location": "Austin"
+      },
+      "tags": [
+        "production"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "INC572397",
+      "title": "[REQUEST] User Access & Authentication: Question - response latency",
+      "description": "Request: Ask about upcoming feature release. Context: User Access & Authentication. Technical details: auth header. Please let us know if you need additional information.",
+      "ticket_type": "Bug Report",
+      "service": "User Access & Authentication",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-09-05T05:09:00",
+      "updated_at": "2026-08-18T22:22:00",
+      "user": {
+        "name": "Morgan Martinez",
+        "email": "morgan.martinez@company.com",
+        "team": "Operations",
+        "location": "Boston"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 120,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SRV863008",
+      "title": "[QUESTION] Backup & Recovery: Request - middleware failure",
+      "description": "Request: Why can't I access the dashboard?. Context: Backup & Recovery. Technical details: recovery time. Please let us know if you need additional information.",
+      "ticket_type": "Incident",
+      "service": "Backup & Recovery",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-08-16T19:23:00",
+      "updated_at": "2026-08-13T20:35:00",
+      "user": {
+        "name": "Alex Martinez",
+        "email": "alex.martinez@company.com",
+        "team": "HR",
+        "location": "Seattle"
+      },
+      "tags": [
+        "urgent",
+        "database"
+      ],
+      "attachments": 0,
+      "sla_minutes": 120,
+      "assigned_to": "John Doe",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SRV380116",
+      "title": "[NORMAL] Hardware Support: Request - 500 error",
+      "description": "Request: Request training session for new tool. Context: Hardware Support. Technical details: power supply. Please let us know if you need additional information.",
+      "ticket_type": "Feature Request",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Pending",
+      "created_at": "2026-08-19T21:53:00",
+      "updated_at": "2026-08-28T03:08:00",
+      "user": {
+        "name": "Riley Smith",
+        "email": "riley.smith@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "urgent"
+      ],
+      "attachments": 0,
+      "sla_minutes": 480,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SRV022176",
+      "title": "[ERROR] Security Operations: Issue - middleware failure",
+      "description": "Issue: Database connection pool exhausted. Environment: Security Operations. Additional details: encryption failure. We need this resolved as soon as possible.",
+      "ticket_type": "Bug Report",
+      "service": "Security Operations",
+      "severity": "High",
+      "priority": "P1",
+      "status": "New",
+      "created_at": "2026-09-09T20:27:00",
+      "updated_at": "2026-08-29T16:34:00",
+      "user": {
+        "name": "Jamie Williams",
+        "email": "jamie.williams@company.com",
+        "team": "Marketing",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "documentation",
+        "urgent"
+      ],
+      "attachments": 0,
+      "sla_minutes": 60,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "INC345045",
+      "title": "[HELP] Network Infrastructure: Issue - cache invalidation",
+      "description": "Request: The API is returning errors. Context: Network Infrastructure. Technical details: network latency. We need this resolved as soon as possible.",
+      "ticket_type": "Configuration Change",
+      "service": "Network Infrastructure",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "Closed",
+      "created_at": "2026-08-23T22:33:00",
+      "updated_at": "2026-08-28T13:04:00",
+      "user": {
+        "name": "Jamie Johnson",
+        "email": "jamie.johnson@company.com",
+        "team": "Finance",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "urgent",
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "INC109871",
+      "title": "[SLOW] Email & Collaboration: Request - response latency",
+      "description": "Issue: User session not persisting across requests. Environment: Email & Collaboration. Additional details: outlook web. Please let us know if you need additional information.",
+      "ticket_type": "Security Issue",
+      "service": "Email & Collaboration",
+      "severity": "High",
+      "priority": "P3",
+      "status": "New",
+      "created_at": "2026-08-27T08:35:00",
+      "updated_at": "2026-09-03T00:12:00",
+      "user": {
+        "name": "Jordan Miller",
+        "email": "jordan.miller@company.com",
+        "team": "Finance",
+        "location": "Austin"
+      },
+      "tags": [
+        "security",
+        "urgent",
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "INC972720",
+      "title": "[ISSUE] Hardware Support: Problem - API endpoint",
+      "description": "Request: Ask for documentation on feature X. Context: Hardware Support. Technical details: server rack. Please let us know if you need additional information.",
+      "ticket_type": "Incident",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-12T17:27:00",
+      "updated_at": "2026-09-11T08:55:00",
+      "user": {
+        "name": "Morgan Garcia",
+        "email": "morgan.garcia@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "security"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "PERF401523",
+      "title": "[ISSUE] Hardware Support: Request - cache invalidation",
+      "description": "Request: Request training session for new tool. Context: Hardware Support. Technical details: disk replacement. Please let us know if you need additional information.",
+      "ticket_type": "Configuration Change",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-08-16T11:26:00",
+      "updated_at": "2026-08-27T08:32:00",
+      "user": {
+        "name": "Alex Martinez",
+        "email": "alex.martinez@company.com",
+        "team": "Marketing",
+        "location": "Seattle"
+      },
+      "tags": [
+        "production",
+        "api"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "John Doe",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SEC344226",
+      "title": "[NORMAL] Hardware Support: Question - session state",
+      "description": "Request: Ask about upcoming feature release. Context: Hardware Support. Technical details: hardware RAID. We need this resolved as soon as possible.",
+      "ticket_type": "Performance Issue",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-09-03T18:21:00",
+      "updated_at": "2026-08-28T16:23:00",
+      "user": {
+        "name": "Parker Garcia",
+        "email": "parker.garcia@company.com",
+        "team": "Operations",
+        "location": "Remote"
+      },
+      "tags": [
+        "production",
+        "staging"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "BUG765118",
+      "title": "[NORMAL] Database Services: Issue - response latency",
+      "description": "Request: Request to add new team member. Context: Database Services. Technical details: deadlock. We need this resolved as soon as possible.",
+      "ticket_type": "Account Issue",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Pending",
+      "created_at": "2026-09-07T03:07:00",
+      "updated_at": "2026-08-12T01:01:00",
+      "user": {
+        "name": "Quinn Smith",
+        "email": "quinn.smith@company.com",
+        "team": "Operations",
+        "location": "Boston"
+      },
+      "tags": [
+        "documentation",
+        "urgent"
+      ],
+      "attachments": 1,
+      "sla_minutes": 30,
+      "assigned_to": "Security Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SEC281882",
+      "title": "[PROBLEM] Cloud Services (AWS/Azure/GCP): Request - cache invalidation",
+      "description": "Request: Ask about SLA guarantees. Context: Cloud Services (AWS/Azure/GCP). Technical details: Azure VM. We need this resolved as soon as possible.",
+      "ticket_type": "Feature Request",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "New",
+      "created_at": "2026-09-06T06:31:00",
+      "updated_at": "2026-08-23T16:48:00",
+      "user": {
+        "name": "Riley Williams",
+        "email": "riley.williams@company.com",
+        "team": "Support",
+        "location": "Austin"
+      },
+      "tags": [
+        "staging",
+        "api"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SEC297486",
+      "title": "[P3] Application Support: Request - 404 not found",
+      "description": "Request: The email integration stopped working. Context: Application Support. Technical details: session state. This is a recurring problem that needs investigation.",
+      "ticket_type": "Account Issue",
+      "service": "Application Support",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "New",
+      "created_at": "2026-08-21T23:37:00",
+      "updated_at": "2026-09-01T02:13:00",
+      "user": {
+        "name": "Parker Miller",
+        "email": "parker.miller@company.com",
+        "team": "Support",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "integration",
+        "documentation"
+      ],
+      "attachments": 3,
+      "sla_minutes": 60,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "SRV878405",
+      "title": "[FAILURE] Backup & Recovery: Question - session state",
+      "description": "Issue: Database connection pool exhausted. Environment: Backup & Recovery. Additional details: storage lifecycle. Please let us know if you need additional information.",
+      "ticket_type": "Performance Issue",
+      "service": "Backup & Recovery",
+      "severity": "High",
+      "priority": "P3",
+      "status": "In Progress",
+      "created_at": "2026-08-30T10:35:00",
+      "updated_at": "2026-09-04T20:28:00",
+      "user": {
+        "name": "Casey Johnson",
+        "email": "casey.johnson@company.com",
+        "team": "Marketing",
+        "location": "Austin"
+      },
+      "tags": [
+        "security"
+      ],
+      "attachments": 2,
+      "sla_minutes": 240,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "SEC017634",
+      "title": "[P2] Monitoring & Alerts: Problem - service mesh",
+      "description": "Request: Need explanation of billing statement. Context: Monitoring & Alerts. Technical details: error rate. This is affecting our production environment.",
+      "ticket_type": "Incident",
+      "service": "Monitoring & Alerts",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "New",
+      "created_at": "2026-08-15T23:38:00",
+      "updated_at": "2026-08-12T11:54:00",
+      "user": {
+        "name": "Jamie Smith",
+        "email": "jamie.smith@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "documentation",
+        "production"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ068489",
+      "title": "[URGENT] Security Operations: Request - 404 not found",
+      "description": "Issue: Email notifications not being delivered. Environment: Security Operations. Additional details: audit log. This is affecting our production environment.",
+      "ticket_type": "Incident",
+      "service": "Security Operations",
+      "severity": "High",
+      "priority": "P1",
+      "status": "In Progress",
+      "created_at": "2026-09-09T21:59:00",
+      "updated_at": "2026-08-19T01:28:00",
+      "user": {
+        "name": "Riley Martinez",
+        "email": "riley.martinez@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 3,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ377294",
+      "title": "[URGENT] Hardware Support: Problem - API endpoint",
+      "description": "Issue: Authentication tokens expiring too quickly. Environment: Hardware Support. Additional details: disk replacement. We need this resolved as soon as possible.",
+      "ticket_type": "Performance Issue",
+      "service": "Hardware Support",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-12T14:45:00",
+      "updated_at": "2026-09-05T06:48:00",
+      "user": {
+        "name": "Jamie Smith",
+        "email": "jamie.smith@company.com",
+        "team": "Support",
+        "location": "Remote"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "SRV704279",
+      "title": "[ISSUE] Application Support: Question - 404 not found",
+      "description": "Request: Request custom report generation. Context: Application Support. Technical details: 500 error. Please let us know if you need additional information.",
+      "ticket_type": "Bug Report",
+      "service": "Application Support",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-08-21T11:34:00",
+      "updated_at": "2026-08-24T02:40:00",
+      "user": {
+        "name": "Avery Miller",
+        "email": "avery.miller@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "security"
+      ],
+      "attachments": 3,
+      "sla_minutes": 60,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "PERF644271",
+      "title": "[SLOW] Network Infrastructure: Problem - 404 not found",
+      "description": "Issue: File upload failing with 413 error. Environment: Network Infrastructure. Additional details: bandwidth congestion. This is affecting our production environment.",
+      "ticket_type": "Service Request",
+      "service": "Network Infrastructure",
+      "severity": "High",
+      "priority": "P4",
+      "status": "In Progress",
+      "created_at": "2026-08-18T02:36:00",
+      "updated_at": "2026-08-27T10:10:00",
+      "user": {
+        "name": "Quinn Jones",
+        "email": "quinn.jones@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "integration",
+        "urgent"
+      ],
+      "attachments": 2,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "SEC285903",
+      "title": "[SLOW] User Access & Authentication: Problem - 500 error",
+      "description": "Issue: Calendar sync breaking after DST change. Environment: User Access & Authentication. Additional details: password reset. This is a recurring problem that needs investigation.",
+      "ticket_type": "Service Request",
+      "service": "User Access & Authentication",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-20T12:55:00",
+      "updated_at": "2026-08-13T14:11:00",
+      "user": {
+        "name": "Parker Garcia",
+        "email": "parker.garcia@company.com",
+        "team": "Finance",
+        "location": "Seattle"
+      },
+      "tags": [
+        "production"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ288992",
+      "title": "[REQUEST] Cloud Services (AWS/Azure/GCP): Request - session state",
+      "description": "Request: Ask about SLA guarantees. Context: Cloud Services (AWS/Azure/GCP). Technical details: Lambda function. We need this resolved as soon as possible.",
+      "ticket_type": "Configuration Change",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "New",
+      "created_at": "2026-08-18T22:20:00",
+      "updated_at": "2026-09-07T15:13:00",
+      "user": {
+        "name": "Jordan Johnson",
+        "email": "jordan.johnson@company.com",
+        "team": "Support",
+        "location": "Seattle"
+      },
+      "tags": [
+        "api",
+        "integration",
+        "database"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ209674",
+      "title": "[REQUEST] User Access & Authentication: Request - service mesh",
+      "description": "Request: Request custom report generation. Context: User Access & Authentication. Technical details: LDAP sync. This is affecting our production environment.",
+      "ticket_type": "Feature Request",
+      "service": "User Access & Authentication",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-08-19T16:48:00",
+      "updated_at": "2026-09-03T12:04:00",
+      "user": {
+        "name": "Casey Williams",
+        "email": "casey.williams@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 1,
+      "sla_minutes": 480,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "BUG496776",
+      "title": "[INFO] Backup & Recovery: Problem - middleware failure",
+      "description": "Request: I lost my MFA device, how do I recover?. Context: Backup & Recovery. Technical details: storage lifecycle. The issue started occurring today morning.",
+      "ticket_type": "Security Issue",
+      "service": "Backup & Recovery",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "New",
+      "created_at": "2026-08-14T20:45:00",
+      "updated_at": "2026-09-03T11:21:00",
+      "user": {
+        "name": "Morgan Miller",
+        "email": "morgan.miller@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "security",
+        "staging"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "INC289784",
+      "title": "[PROBLEM] Network Infrastructure: Issue - request timeout",
+      "description": "Request: Need explanation of billing statement. Context: Network Infrastructure. Technical details: firewall rule. This is a recurring problem that needs investigation.",
+      "ticket_type": "Account Issue",
+      "service": "Network Infrastructure",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-08-16T10:55:00",
+      "updated_at": "2026-08-21T00:45:00",
+      "user": {
+        "name": "Avery Johnson",
+        "email": "avery.johnson@company.com",
+        "team": "Operations",
+        "location": "New York"
+      },
+      "tags": [
+        "urgent",
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 1440,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "PERF753836",
+      "title": "[NORMAL] Database Services: Issue - cache invalidation",
+      "description": "Request: Request to add new team member. Context: Database Services. Technical details: deadlock. Please let us know if you need additional information.",
+      "ticket_type": "Performance Issue",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "New",
+      "created_at": "2026-08-12T09:25:00",
+      "updated_at": "2026-09-05T11:40:00",
+      "user": {
+        "name": "Riley Martinez",
+        "email": "riley.martinez@company.com",
+        "team": "Operations",
+        "location": "Remote"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 1,
+      "sla_minutes": 30,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "PERF382124",
+      "title": "[INQUIRY] Backup & Recovery: Request - response latency",
+      "description": "Request: Can we increase the storage quota?. Context: Backup & Recovery. Technical details: snapshot. This is affecting our production environment.",
+      "ticket_type": "Account Issue",
+      "service": "Backup & Recovery",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "Pending",
+      "created_at": "2026-08-16T13:57:00",
+      "updated_at": "2026-08-14T08:09:00",
+      "user": {
+        "name": "Casey Martinez",
+        "email": "casey.martinez@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC753049",
+      "title": "[HELP] Application Support: Question - cache invalidation",
+      "description": "Request: The API is returning errors. Context: Application Support. Technical details: API endpoint. We need this resolved as soon as possible.",
+      "ticket_type": "Bug Report",
+      "service": "Application Support",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-08-28T20:15:00",
+      "updated_at": "2026-08-29T12:32:00",
+      "user": {
+        "name": "Morgan Williams",
+        "email": "morgan.williams@company.com",
+        "team": "HR",
+        "location": "Seattle"
+      },
+      "tags": [
+        "production"
+      ],
+      "attachments": 3,
+      "sla_minutes": 120,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "INC278334",
+      "title": "[SLOW] Email & Collaboration: Question - response latency",
+      "description": "Issue: Calendar sync breaking after DST change. Environment: Email & Collaboration. Additional details: transport rule. Please let us know if you need additional information.",
+      "ticket_type": "Performance Issue",
+      "service": "Email & Collaboration",
+      "severity": "High",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-09-06T15:54:00",
+      "updated_at": "2026-08-19T04:52:00",
+      "user": {
+        "name": "Morgan Brown",
+        "email": "morgan.brown@company.com",
+        "team": "Support",
+        "location": "New York"
+      },
+      "tags": [
+        "api",
+        "staging"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "REQ311431",
+      "title": "[PROBLEM] Backup & Recovery: Problem - cache invalidation",
+      "description": "Request: Ask for documentation on feature X. Context: Backup & Recovery. Technical details: snapshot. We need this resolved as soon as possible.",
+      "ticket_type": "Performance Issue",
+      "service": "Backup & Recovery",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-09-06T05:59:00",
+      "updated_at": "2026-08-31T21:57:00",
+      "user": {
+        "name": "Morgan Rodriguez",
+        "email": "morgan.rodriguez@company.com",
+        "team": "Marketing",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC590544",
+      "title": "[HELP] Cloud Services (AWS/Azure/GCP): Question - API endpoint",
+      "description": "Request: I need to add a new user account. Context: Cloud Services (AWS/Azure/GCP). Technical details: Kubernetes pod. This is affecting our production environment.",
+      "ticket_type": "Performance Issue",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "In Progress",
+      "created_at": "2026-08-21T00:14:00",
+      "updated_at": "2026-09-10T12:22:00",
+      "user": {
+        "name": "Taylor Jones",
+        "email": "taylor.jones@company.com",
+        "team": "Finance",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "documentation",
+        "urgent",
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Security Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "PERF084336",
+      "title": "[INFO] Database Services: Problem - 500 error",
+      "description": "Request: The API is returning errors. Context: Database Services. Technical details: connection pool. We need this resolved as soon as possible.",
+      "ticket_type": "Configuration Change",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "In Progress",
+      "created_at": "2026-09-05T11:38:00",
+      "updated_at": "2026-08-24T14:35:00",
+      "user": {
+        "name": "Morgan Smith",
+        "email": "morgan.smith@company.com",
+        "team": "Finance",
+        "location": "Remote"
+      },
+      "tags": [
+        "security",
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 60,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "REQ612678",
+      "title": "[SLOW] Network Infrastructure: Request - request timeout",
+      "description": "Issue: User session not persisting across requests. Environment: Network Infrastructure. Additional details: router configuration. The issue started occurring today morning.",
+      "ticket_type": "Security Issue",
+      "service": "Network Infrastructure",
+      "severity": "High",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-08-21T07:10:00",
+      "updated_at": "2026-08-25T07:55:00",
+      "user": {
+        "name": "Avery Garcia",
+        "email": "avery.garcia@company.com",
+        "team": "Support",
+        "location": "Austin"
+      },
+      "tags": [
+        "urgent"
+      ],
+      "attachments": 2,
+      "sla_minutes": 60,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "INC968918",
+      "title": "[CRITICAL] Hardware Support: Issue - cache invalidation",
+      "description": "Issue: Search functionality returning incomplete results. Environment: Hardware Support. Additional details: power supply. We need this resolved as soon as possible.",
+      "ticket_type": "Feature Request",
+      "service": "Hardware Support",
+      "severity": "Critical",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-09-09T19:51:00",
+      "updated_at": "2026-08-29T23:19:00",
+      "user": {
+        "name": "Jordan Brown",
+        "email": "jordan.brown@company.com",
+        "team": "Marketing",
+        "location": "Boston"
+      },
+      "tags": [
+        "production",
+        "documentation",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 120,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ439219",
+      "title": "[REQUEST] Email & Collaboration: Issue - API endpoint",
+      "description": "Request: Request custom report generation. Context: Email & Collaboration. Technical details: transport rule. The issue started occurring today morning.",
+      "ticket_type": "Service Request",
+      "service": "Email & Collaboration",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-09-06T06:00:00",
+      "updated_at": "2026-08-13T11:24:00",
+      "user": {
+        "name": "Jamie Martinez",
+        "email": "jamie.martinez@company.com",
+        "team": "Marketing",
+        "location": "Remote"
+      },
+      "tags": [
+        "urgent"
+      ],
+      "attachments": 3,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "SRV608317",
+      "title": "[PROBLEM] Hardware Support: Problem - response latency",
+      "description": "Request: Request training session for new tool. Context: Hardware Support. Technical details: hardware RAID. This is affecting our production environment.",
+      "ticket_type": "Service Request",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-08-16T05:14:00",
+      "updated_at": "2026-08-21T14:40:00",
+      "user": {
+        "name": "Quinn Williams",
+        "email": "quinn.williams@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 0,
+      "sla_minutes": 1440,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SRV716858",
+      "title": "[DOWN] Cloud Services (AWS/Azure/GCP): Issue - response latency",
+      "description": "Issue: User session not persisting across requests. Environment: Cloud Services (AWS/Azure/GCP). Additional details: Lambda function. This is affecting our production environment.",
+      "ticket_type": "Account Issue",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Critical",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-15T11:11:00",
+      "updated_at": "2026-08-25T11:29:00",
+      "user": {
+        "name": "Alex Smith",
+        "email": "alex.smith@company.com",
+        "team": "Marketing",
+        "location": "Boston"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "INC020132",
+      "title": "[REQUEST] Monitoring & Alerts: Problem - API endpoint",
+      "description": "Request: Need help understanding error logs. Context: Monitoring & Alerts. Technical details: dashboard metric. This is affecting our production environment.",
+      "ticket_type": "Service Request",
+      "service": "Monitoring & Alerts",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "In Progress",
+      "created_at": "2026-08-15T14:55:00",
+      "updated_at": "2026-08-25T18:38:00",
+      "user": {
+        "name": "Casey Martinez",
+        "email": "casey.martinez@company.com",
+        "team": "Support",
+        "location": "Boston"
+      },
+      "tags": [
+        "staging"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SRV821355",
+      "title": "[P3] Database Services: Problem - API endpoint",
+      "description": "Request: The email integration stopped working. Context: Database Services. Technical details: query timeout. We need this resolved as soon as possible.",
+      "ticket_type": "Security Issue",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-09-05T17:43:00",
+      "updated_at": "2026-08-22T11:58:00",
+      "user": {
+        "name": "Morgan Garcia",
+        "email": "morgan.garcia@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "production"
+      ],
+      "attachments": 1,
+      "sla_minutes": 30,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "BUG784463",
+      "title": "[INQUIRY] Hardware Support: Request - 404 not found",
+      "description": "Request: Why can't I access the dashboard?. Context: Hardware Support. Technical details: switch replacement. The issue started occurring today morning.",
+      "ticket_type": "Bug Report",
+      "service": "Hardware Support",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "New",
+      "created_at": "2026-08-16T01:24:00",
+      "updated_at": "2026-08-26T00:09:00",
+      "user": {
+        "name": "Parker Johnson",
+        "email": "parker.johnson@company.com",
+        "team": "HR",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "integration",
+        "urgent",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "REQ122080",
+      "title": "[P3] Network Infrastructure: Problem - 500 error",
+      "description": "Request: I'm getting timeout errors on the portal. Context: Network Infrastructure. Technical details: bandwidth congestion. This is a recurring problem that needs investigation.",
+      "ticket_type": "Security Issue",
+      "service": "Network Infrastructure",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-22T03:37:00",
+      "updated_at": "2026-08-22T11:30:00",
+      "user": {
+        "name": "Riley Garcia",
+        "email": "riley.garcia@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "production",
+        "database"
+      ],
+      "attachments": 3,
+      "sla_minutes": 120,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "INC471832",
+      "title": "[ISSUE] Database Services: Issue - cache invalidation",
+      "description": "Request: Need help understanding error logs. Context: Database Services. Technical details: schema change. We need this resolved as soon as possible.",
+      "ticket_type": "Account Issue",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "In Progress",
+      "created_at": "2026-09-11T01:17:00",
+      "updated_at": "2026-08-22T04:27:00",
+      "user": {
+        "name": "Parker Rodriguez",
+        "email": "parker.rodriguez@company.com",
+        "team": "Sales",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "urgent",
+        "api"
+      ],
+      "attachments": 1,
+      "sla_minutes": 120,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "BUG300296",
+      "title": "[NORMAL] Hardware Support: Question - 404 not found",
+      "description": "Request: Need access to analytics dashboard. Context: Hardware Support. Technical details: hardware RAID. This is affecting our production environment.",
+      "ticket_type": "Service Request",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "New",
+      "created_at": "2026-09-08T23:51:00",
+      "updated_at": "2026-08-27T04:59:00",
+      "user": {
+        "name": "Quinn Smith",
+        "email": "quinn.smith@company.com",
+        "team": "Sales",
+        "location": "Remote"
+      },
+      "tags": [
+        "production",
+        "urgent",
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "INC129410",
+      "title": "[ERROR] Backup & Recovery: Issue - API endpoint",
+      "description": "Issue: Database connection pool exhausted. Environment: Backup & Recovery. Additional details: snapshot. We need this resolved as soon as possible.",
+      "ticket_type": "Service Request",
+      "service": "Backup & Recovery",
+      "severity": "High",
+      "priority": "P3",
+      "status": "Closed",
+      "created_at": "2026-08-20T01:17:00",
+      "updated_at": "2026-09-03T16:21:00",
+      "user": {
+        "name": "Parker Miller",
+        "email": "parker.miller@company.com",
+        "team": "Marketing",
+        "location": "New York"
+      },
+      "tags": [
+        "security"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "INC726325",
+      "title": "[ERROR] Network Infrastructure: Issue - middleware failure",
+      "description": "Issue: File upload failing with 413 error. Environment: Network Infrastructure. Additional details: packet loss. This is affecting our production environment.",
+      "ticket_type": "Performance Issue",
+      "service": "Network Infrastructure",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Pending",
+      "created_at": "2026-08-20T12:38:00",
+      "updated_at": "2026-09-03T02:14:00",
+      "user": {
+        "name": "Alex Williams",
+        "email": "alex.williams@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 480,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "REQ011376",
+      "title": "[NORMAL] Email & Collaboration: Question - middleware failure",
+      "description": "Request: Need help understanding error logs. Context: Email & Collaboration. Technical details: email delivery. The issue started occurring today morning.",
+      "ticket_type": "Feature Request",
+      "service": "Email & Collaboration",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Pending",
+      "created_at": "2026-09-02T11:49:00",
+      "updated_at": "2026-09-08T19:30:00",
+      "user": {
+        "name": "Casey Brown",
+        "email": "casey.brown@company.com",
+        "team": "Operations",
+        "location": "Seattle"
+      },
+      "tags": [
+        "security",
+        "api",
+        "staging"
+      ],
+      "attachments": 2,
+      "sla_minutes": 30,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC853908",
+      "title": "[P1] Backup & Recovery: Question - middleware failure",
+      "description": "Issue: Database connection pool exhausted. Environment: Backup & Recovery. Additional details: restore point. The issue started occurring today morning.",
+      "ticket_type": "Feature Request",
+      "service": "Backup & Recovery",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Closed",
+      "created_at": "2026-08-30T07:16:00",
+      "updated_at": "2026-09-03T20:20:00",
+      "user": {
+        "name": "Parker Johnson",
+        "email": "parker.johnson@company.com",
+        "team": "Operations",
+        "location": "New York"
+      },
+      "tags": [
+        "security",
+        "documentation",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 480,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "SEC183142",
+      "title": "[URGENT] Cloud Services (AWS/Azure/GCP): Issue - service mesh",
+      "description": "Issue: Database connection pool exhausted. Environment: Cloud Services (AWS/Azure/GCP). Additional details: Lambda function. This is a recurring problem that needs investigation.",
+      "ticket_type": "Performance Issue",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Pending",
+      "created_at": "2026-08-15T12:37:00",
+      "updated_at": "2026-08-30T10:59:00",
+      "user": {
+        "name": "Casey Jones",
+        "email": "casey.jones@company.com",
+        "team": "Marketing",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 3,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "PERF536102",
+      "title": "[SLOW] Monitoring & Alerts: Request - cache invalidation",
+      "description": "Issue: File upload failing with 413 error. Environment: Monitoring & Alerts. Additional details: dashboard metric. This is a recurring problem that needs investigation.",
+      "ticket_type": "Security Issue",
+      "service": "Monitoring & Alerts",
+      "severity": "High",
+      "priority": "P3",
+      "status": "In Progress",
+      "created_at": "2026-08-31T14:24:00",
+      "updated_at": "2026-09-08T08:06:00",
+      "user": {
+        "name": "Quinn Martinez",
+        "email": "quinn.martinez@company.com",
+        "team": "Sales",
+        "location": "New York"
+      },
+      "tags": [
+        "staging"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ554351",
+      "title": "[DOWN] Backup & Recovery: Question - service mesh",
+      "description": "Issue: Email notifications not being delivered. Environment: Backup & Recovery. Additional details: incremental backup. The issue started occurring today morning.",
+      "ticket_type": "Performance Issue",
+      "service": "Backup & Recovery",
+      "severity": "Critical",
+      "priority": "P3",
+      "status": "Closed",
+      "created_at": "2026-08-30T23:54:00",
+      "updated_at": "2026-08-17T08:15:00",
+      "user": {
+        "name": "Jamie Garcia",
+        "email": "jamie.garcia@company.com",
+        "team": "Marketing",
+        "location": "Seattle"
+      },
+      "tags": [
+        "api",
+        "documentation",
+        "production"
+      ],
+      "attachments": 2,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SRV226757",
+      "title": "[PROBLEM] Application Support: Issue - service mesh",
+      "description": "Request: Request training session for new tool. Context: Application Support. Technical details: 404 not found. We need this resolved as soon as possible.",
+      "ticket_type": "Performance Issue",
+      "service": "Application Support",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Closed",
+      "created_at": "2026-08-24T00:32:00",
+      "updated_at": "2026-08-23T07:42:00",
+      "user": {
+        "name": "Riley Jones",
+        "email": "riley.jones@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "database",
+        "security",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "INC439167",
+      "title": "[P1] Application Support: Issue - 404 not found",
+      "description": "Issue: API rate limiting is too aggressive. Environment: Application Support. Additional details: middleware failure. This is a recurring problem that needs investigation.",
+      "ticket_type": "Security Issue",
+      "service": "Application Support",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-08-19T23:41:00",
+      "updated_at": "2026-08-21T06:12:00",
+      "user": {
+        "name": "Jordan Williams",
+        "email": "jordan.williams@company.com",
+        "team": "Operations",
+        "location": "New York"
+      },
+      "tags": [
+        "documentation",
+        "urgent",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 480,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "BUG689378",
+      "title": "[HELP] Email & Collaboration: Issue - cache invalidation",
+      "description": "Request: I lost my MFA device, how do I recover?. Context: Email & Collaboration. Technical details: SMTP relay. This is a recurring problem that needs investigation.",
+      "ticket_type": "Account Issue",
+      "service": "Email & Collaboration",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-09-03T10:49:00",
+      "updated_at": "2026-09-05T06:34:00",
+      "user": {
+        "name": "Casey Garcia",
+        "email": "casey.garcia@company.com",
+        "team": "Operations",
+        "location": "Boston"
+      },
+      "tags": [
+        "database"
+      ],
+      "attachments": 2,
+      "sla_minutes": 240,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ971610",
+      "title": "[REQUEST] Monitoring & Alerts: Problem - session state",
+      "description": "Request: Need explanation of billing statement. Context: Monitoring & Alerts. Technical details: distributed tracing. This is a recurring problem that needs investigation.",
+      "ticket_type": "Bug Report",
+      "service": "Monitoring & Alerts",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "Pending",
+      "created_at": "2026-09-09T03:49:00",
+      "updated_at": "2026-08-23T06:50:00",
+      "user": {
+        "name": "Taylor Johnson",
+        "email": "taylor.johnson@company.com",
+        "team": "Sales",
+        "location": "New York"
+      },
+      "tags": [
+        "production",
+        "integration",
+        "api"
+      ],
+      "attachments": 0,
+      "sla_minutes": 120,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "BUG808792",
+      "title": "[FAILURE] User Access & Authentication: Question - API endpoint",
+      "description": "Issue: API rate limiting is too aggressive. Environment: User Access & Authentication. Additional details: SSO failure. The issue started occurring today morning.",
+      "ticket_type": "Account Issue",
+      "service": "User Access & Authentication",
+      "severity": "High",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-08-16T15:58:00",
+      "updated_at": "2026-08-19T09:24:00",
+      "user": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@company.com",
+        "team": "Finance",
+        "location": "Austin"
+      },
+      "tags": [
+        "urgent",
+        "database",
+        "production"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "BUG072401",
+      "title": "[INFO] Monitoring & Alerts: Issue - 500 error",
+      "description": "Request: I'm getting timeout errors on the portal. Context: Monitoring & Alerts. Technical details: synthetic check. The issue started occurring today morning.",
+      "ticket_type": "Bug Report",
+      "service": "Monitoring & Alerts",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-08-16T10:15:00",
+      "updated_at": "2026-08-19T17:25:00",
+      "user": {
+        "name": "Alex Rodriguez",
+        "email": "alex.rodriguez@company.com",
+        "team": "Operations",
+        "location": "Remote"
+      },
+      "tags": [
+        "database",
+        "staging",
+        "security"
+      ],
+      "attachments": 3,
+      "sla_minutes": 480,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "INC555935",
+      "title": "[P2] Database Services: Issue - session state",
+      "description": "Request: Ask about upcoming feature release. Context: Database Services. Technical details: restore process. We need this resolved as soon as possible.",
+      "ticket_type": "Service Request",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-08-23T11:49:00",
+      "updated_at": "2026-08-13T08:10:00",
+      "user": {
+        "name": "Quinn Williams",
+        "email": "quinn.williams@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "database",
+        "documentation"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "PERF089871",
+      "title": "[P2] Monitoring & Alerts: Question - request timeout",
+      "description": "Request: Request to add new team member. Context: Monitoring & Alerts. Technical details: alert threshold. This is a recurring problem that needs investigation.",
+      "ticket_type": "Bug Report",
+      "service": "Monitoring & Alerts",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-27T17:20:00",
+      "updated_at": "2026-08-27T11:54:00",
+      "user": {
+        "name": "Avery Rodriguez",
+        "email": "avery.rodriguez@company.com",
+        "team": "Finance",
+        "location": "Seattle"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 3,
+      "sla_minutes": 480,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "SEC287201",
+      "title": "[QUESTION] Security Operations: Issue - session state",
+      "description": "Request: I'm getting timeout errors on the portal. Context: Security Operations. Technical details: compliance. We need this resolved as soon as possible.",
+      "ticket_type": "Feature Request",
+      "service": "Security Operations",
+      "severity": "Low",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-09-03T12:09:00",
+      "updated_at": "2026-08-15T14:26:00",
+      "user": {
+        "name": "Avery Garcia",
+        "email": "avery.garcia@company.com",
+        "team": "Marketing",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "api",
+        "urgent",
+        "production"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "BUG428352",
+      "title": "[CRITICAL] Hardware Support: Issue - 500 error",
+      "description": "Issue: Email notifications not being delivered. Environment: Hardware Support. Additional details: network card. The issue started occurring today morning.",
+      "ticket_type": "Security Issue",
+      "service": "Hardware Support",
+      "severity": "Critical",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-08-19T16:20:00",
+      "updated_at": "2026-08-19T04:39:00",
+      "user": {
+        "name": "Avery Williams",
+        "email": "avery.williams@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "staging",
+        "urgent",
+        "integration"
+      ],
+      "attachments": 1,
+      "sla_minutes": 120,
+      "assigned_to": "John Doe",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "SRV998917",
+      "title": "[QUESTION] Email & Collaboration: Request - response latency",
+      "description": "Request: How do I reset my password?. Context: Email & Collaboration. Technical details: spam filter. Please let us know if you need additional information.",
+      "ticket_type": "Configuration Change",
+      "service": "Email & Collaboration",
+      "severity": "Low",
+      "priority": "P3",
+      "status": "New",
+      "created_at": "2026-08-15T18:25:00",
+      "updated_at": "2026-08-15T13:01:00",
+      "user": {
+        "name": "Parker Johnson",
+        "email": "parker.johnson@company.com",
+        "team": "Support",
+        "location": "Austin"
+      },
+      "tags": [
+        "production",
+        "staging"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "PERF421447",
+      "title": "[INQUIRY] Application Support: Request - middleware failure",
+      "description": "Request: Can we increase the storage quota?. Context: Application Support. Technical details: session state. This is affecting our production environment.",
+      "ticket_type": "Feature Request",
+      "service": "Application Support",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-09-03T04:57:00",
+      "updated_at": "2026-09-10T13:41:00",
+      "user": {
+        "name": "Riley Garcia",
+        "email": "riley.garcia@company.com",
+        "team": "Sales",
+        "location": "Boston"
+      },
+      "tags": [
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "REQ180844",
+      "title": "[ISSUE] Backup & Recovery: Request - middleware failure",
+      "description": "Request: Request training session for new tool. Context: Backup & Recovery. Technical details: incremental backup. The issue started occurring today morning.",
+      "ticket_type": "Service Request",
+      "service": "Backup & Recovery",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-09-02T03:33:00",
+      "updated_at": "2026-08-16T07:30:00",
+      "user": {
+        "name": "Jamie Davis",
+        "email": "jamie.davis@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "REQ806726",
+      "title": "[P2] Cloud Services (AWS/Azure/GCP): Request - session state",
+      "description": "Request: Ask about SLA guarantees. Context: Cloud Services (AWS/Azure/GCP). Technical details: VPC configuration. The issue started occurring today morning.",
+      "ticket_type": "Bug Report",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-09-06T15:08:00",
+      "updated_at": "2026-08-17T23:26:00",
+      "user": {
+        "name": "Alex Brown",
+        "email": "alex.brown@company.com",
+        "team": "Support",
+        "location": "Seattle"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "BUG534675",
+      "title": "[PROBLEM] Database Services: Issue - API endpoint",
+      "description": "Request: Need explanation of billing statement. Context: Database Services. Technical details: query timeout. The issue started occurring today morning.",
+      "ticket_type": "Security Issue",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P4",
+      "status": "Pending",
+      "created_at": "2026-09-07T22:18:00",
+      "updated_at": "2026-08-21T07:48:00",
+      "user": {
+        "name": "Casey Williams",
+        "email": "casey.williams@company.com",
+        "team": "Operations",
+        "location": "Seattle"
+      },
+      "tags": [
+        "production"
+      ],
+      "attachments": 0,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "SRV236625",
+      "title": "[SLOW] Hardware Support: Issue - cache invalidation",
+      "description": "Issue: Search functionality returning incomplete results. Environment: Hardware Support. Additional details: disk replacement. This is a recurring problem that needs investigation.",
+      "ticket_type": "Feature Request",
+      "service": "Hardware Support",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-08-24T01:15:00",
+      "updated_at": "2026-08-18T07:53:00",
+      "user": {
+        "name": "Avery Williams",
+        "email": "avery.williams@company.com",
+        "team": "Finance",
+        "location": "Remote"
+      },
+      "tags": [
+        "api",
+        "security",
+        "staging"
+      ],
+      "attachments": 1,
+      "sla_minutes": 120,
+      "assigned_to": "John Doe",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "PERF631547",
+      "title": "[CRITICAL] Network Infrastructure: Request - service mesh",
+      "description": "Issue: Calendar sync breaking after DST change. Environment: Network Infrastructure. Additional details: router configuration. This is a recurring problem that needs investigation.",
+      "ticket_type": "Bug Report",
+      "service": "Network Infrastructure",
+      "severity": "Critical",
+      "priority": "P3",
+      "status": "New",
+      "created_at": "2026-08-30T12:09:00",
+      "updated_at": "2026-09-09T02:45:00",
+      "user": {
+        "name": "Quinn Martinez",
+        "email": "quinn.martinez@company.com",
+        "team": "Operations",
+        "location": "Boston"
+      },
+      "tags": [
+        "api",
+        "production"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC578753",
+      "title": "[P3] Security Operations: Problem - API endpoint",
+      "description": "Request: Is there a scheduled maintenance window?. Context: Security Operations. Technical details: compliance. The issue started occurring today morning.",
+      "ticket_type": "Bug Report",
+      "service": "Security Operations",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-09-02T19:56:00",
+      "updated_at": "2026-08-20T21:00:00",
+      "user": {
+        "name": "Alex Williams",
+        "email": "alex.williams@company.com",
+        "team": "Marketing",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "security"
+      ],
+      "attachments": 3,
+      "sla_minutes": 30,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "SEC011082",
+      "title": "[HELP] Security Operations: Request - session state",
+      "description": "Request: How do I reset my password?. Context: Security Operations. Technical details: compliance. We need this resolved as soon as possible.",
+      "ticket_type": "Incident",
+      "service": "Security Operations",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-08-26T22:01:00",
+      "updated_at": "2026-08-14T00:53:00",
+      "user": {
+        "name": "Taylor Rodriguez",
+        "email": "taylor.rodriguez@company.com",
+        "team": "HR",
+        "location": "Seattle"
+      },
+      "tags": [
+        "integration",
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "PERF372327",
+      "title": "[PROBLEM] Database Services: Issue - cache invalidation",
+      "description": "Request: Request training session for new tool. Context: Database Services. Technical details: restore process. Please let us know if you need additional information.",
+      "ticket_type": "Service Request",
+      "service": "Database Services",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-08-29T00:31:00",
+      "updated_at": "2026-08-19T16:16:00",
+      "user": {
+        "name": "Jamie Williams",
+        "email": "jamie.williams@company.com",
+        "team": "Finance",
+        "location": "Remote"
+      },
+      "tags": [
+        "documentation",
+        "production"
+      ],
+      "attachments": 0,
+      "sla_minutes": 30,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC443054",
+      "title": "[QUESTION] Database Services: Issue - session state",
+      "description": "Request: I lost my MFA device, how do I recover?. Context: Database Services. Technical details: index missing. This is affecting our production environment.",
+      "ticket_type": "Configuration Change",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-09-06T03:44:00",
+      "updated_at": "2026-09-10T11:34:00",
+      "user": {
+        "name": "Taylor Martinez",
+        "email": "taylor.martinez@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "api"
+      ],
+      "attachments": 2,
+      "sla_minutes": 1440,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ132000",
+      "title": "[EMERGENCY] Database Services: Request - cache invalidation",
+      "description": "Issue: Database connection pool exhausted. Environment: Database Services. Additional details: schema change. We need this resolved as soon as possible.",
+      "ticket_type": "Service Request",
+      "service": "Database Services",
+      "severity": "Critical",
+      "priority": "P1",
+      "status": "In Progress",
+      "created_at": "2026-09-06T14:00:00",
+      "updated_at": "2026-08-29T00:26:00",
+      "user": {
+        "name": "Casey Garcia",
+        "email": "casey.garcia@company.com",
+        "team": "Sales",
+        "location": "Boston"
+      },
+      "tags": [
+        "production",
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 480,
+      "assigned_to": "Security Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "BUG326010",
+      "title": "[ERROR] Database Services: Request - cache invalidation",
+      "description": "Issue: Authentication tokens expiring too quickly. Environment: Database Services. Additional details: restore process. We need this resolved as soon as possible.",
+      "ticket_type": "Incident",
+      "service": "Database Services",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Closed",
+      "created_at": "2026-08-12T20:17:00",
+      "updated_at": "2026-08-23T01:57:00",
+      "user": {
+        "name": "Quinn Johnson",
+        "email": "quinn.johnson@company.com",
+        "team": "HR",
+        "location": "Austin"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "BUG489954",
+      "title": "[CRITICAL] Email & Collaboration: Request - 500 error",
+      "description": "Issue: User session not persisting across requests. Environment: Email & Collaboration. Additional details: spam filter. This is a recurring problem that needs investigation.",
+      "ticket_type": "Account Issue",
+      "service": "Email & Collaboration",
+      "severity": "Critical",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-08-31T14:35:00",
+      "updated_at": "2026-09-01T03:51:00",
+      "user": {
+        "name": "Morgan Garcia",
+        "email": "morgan.garcia@company.com",
+        "team": "HR",
+        "location": "Remote"
+      },
+      "tags": [
+        "urgent",
+        "database",
+        "staging"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "SRV051141",
+      "title": "[INQUIRY] Database Services: Question - 500 error",
+      "description": "Request: The API is returning errors. Context: Database Services. Technical details: deadlock. This is affecting our production environment.",
+      "ticket_type": "Configuration Change",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-09-11T16:09:00",
+      "updated_at": "2026-08-26T06:53:00",
+      "user": {
+        "name": "Riley Miller",
+        "email": "riley.miller@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "documentation",
+        "api",
+        "staging"
+      ],
+      "attachments": 3,
+      "sla_minutes": 60,
+      "assigned_to": "Security Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "BUG634303",
+      "title": "[CRITICAL] Application Support: Question - session state",
+      "description": "Issue: File upload failing with 413 error. Environment: Application Support. Additional details: response latency. The issue started occurring today morning.",
+      "ticket_type": "Service Request",
+      "service": "Application Support",
+      "severity": "Critical",
+      "priority": "P4",
+      "status": "New",
+      "created_at": "2026-08-23T20:37:00",
+      "updated_at": "2026-09-01T12:39:00",
+      "user": {
+        "name": "Alex Miller",
+        "email": "alex.miller@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "staging",
+        "security"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SRV897535",
+      "title": "[INFO] Security Operations: Issue - response latency",
+      "description": "Request: Why can't I access the dashboard?. Context: Security Operations. Technical details: audit log. The issue started occurring today morning.",
+      "ticket_type": "Incident",
+      "service": "Security Operations",
+      "severity": "Low",
+      "priority": "P1",
+      "status": "Pending",
+      "created_at": "2026-09-01T11:16:00",
+      "updated_at": "2026-08-26T16:28:00",
+      "user": {
+        "name": "Avery Johnson",
+        "email": "avery.johnson@company.com",
+        "team": "Marketing",
+        "location": "New York"
+      },
+      "tags": [
+        "security",
+        "production",
+        "database"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SEC633317",
+      "title": "[P2] User Access & Authentication: Request - 500 error",
+      "description": "Request: Request to add new team member. Context: User Access & Authentication. Technical details: password reset. We need this resolved as soon as possible.",
+      "ticket_type": "Bug Report",
+      "service": "User Access & Authentication",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "New",
+      "created_at": "2026-08-18T14:02:00",
+      "updated_at": "2026-08-22T20:24:00",
+      "user": {
+        "name": "Morgan Martinez",
+        "email": "morgan.martinez@company.com",
+        "team": "Operations",
+        "location": "Austin"
+      },
+      "tags": [
+        "production",
+        "urgent",
+        "staging"
+      ],
+      "attachments": 2,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "SEC319191",
+      "title": "[QUESTION] Database Services: Issue - request timeout",
+      "description": "Request: I lost my MFA device, how do I recover?. Context: Database Services. Technical details: deadlock. This is affecting our production environment.",
+      "ticket_type": "Account Issue",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-09-06T04:57:00",
+      "updated_at": "2026-08-21T00:22:00",
+      "user": {
+        "name": "Jamie Martinez",
+        "email": "jamie.martinez@company.com",
+        "team": "Sales",
+        "location": "Seattle"
+      },
+      "tags": [
+        "staging",
+        "urgent",
+        "api"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "BUG888734",
+      "title": "[FAILURE] Hardware Support: Issue - 500 error",
+      "description": "Issue: Database connection pool exhausted. Environment: Hardware Support. Additional details: fan failure. This is affecting our production environment.",
+      "ticket_type": "Bug Report",
+      "service": "Hardware Support",
+      "severity": "High",
+      "priority": "P4",
+      "status": "New",
+      "created_at": "2026-09-07T06:29:00",
+      "updated_at": "2026-09-05T07:36:00",
+      "user": {
+        "name": "Riley Brown",
+        "email": "riley.brown@company.com",
+        "team": "Marketing",
+        "location": "Boston"
+      },
+      "tags": [
+        "documentation",
+        "security"
+      ],
+      "attachments": 1,
+      "sla_minutes": 480,
+      "assigned_to": "Security Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SEC515687",
+      "title": "[P3] Hardware Support: Question - API endpoint",
+      "description": "Request: Can we increase the storage quota?. Context: Hardware Support. Technical details: power supply. This is a recurring problem that needs investigation.",
+      "ticket_type": "Account Issue",
+      "service": "Hardware Support",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-09-07T14:18:00",
+      "updated_at": "2026-09-06T16:21:00",
+      "user": {
+        "name": "Morgan Miller",
+        "email": "morgan.miller@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "staging",
+        "production",
+        "urgent"
+      ],
+      "attachments": 2,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ989165",
+      "title": "[URGENT] Backup & Recovery: Issue - middleware failure",
+      "description": "Issue: Database connection pool exhausted. Environment: Backup & Recovery. Additional details: incremental backup. We need this resolved as soon as possible.",
+      "ticket_type": "Security Issue",
+      "service": "Backup & Recovery",
+      "severity": "High",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-08-26T18:36:00",
+      "updated_at": "2026-08-27T15:44:00",
+      "user": {
+        "name": "Jordan Rodriguez",
+        "email": "jordan.rodriguez@company.com",
+        "team": "HR",
+        "location": "Boston"
+      },
+      "tags": [
+        "urgent",
+        "staging",
+        "security"
+      ],
+      "attachments": 0,
+      "sla_minutes": 1440,
+      "assigned_to": "Support Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "BUG442624",
+      "title": "[PROBLEM] Hardware Support: Problem - request timeout",
+      "description": "Request: Request to increase API rate limit. Context: Hardware Support. Technical details: power supply. The issue started occurring today morning.",
+      "ticket_type": "Performance Issue",
+      "service": "Hardware Support",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-08-17T23:36:00",
+      "updated_at": "2026-09-10T05:22:00",
+      "user": {
+        "name": "Quinn Brown",
+        "email": "quinn.brown@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "api"
+      ],
+      "attachments": 0,
+      "sla_minutes": 30,
+      "assigned_to": "John Doe",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SRV027074",
+      "title": "[INQUIRY] Email & Collaboration: Issue - session state",
+      "description": "Request: How do I reset my password?. Context: Email & Collaboration. Technical details: mail flow. This is affecting our production environment.",
+      "ticket_type": "Feature Request",
+      "service": "Email & Collaboration",
+      "severity": "Low",
+      "priority": "P4",
+      "status": "Closed",
+      "created_at": "2026-08-19T03:11:00",
+      "updated_at": "2026-08-13T18:34:00",
+      "user": {
+        "name": "Jordan Davis",
+        "email": "jordan.davis@company.com",
+        "team": "HR",
+        "location": "Remote"
+      },
+      "tags": [
+        "urgent"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "PERF047731",
+      "title": "[URGENT] Hardware Support: Problem - API endpoint",
+      "description": "Issue: File upload failing with 413 error. Environment: Hardware Support. Additional details: server rack. This is a recurring problem that needs investigation.",
+      "ticket_type": "Security Issue",
+      "service": "Hardware Support",
+      "severity": "High",
+      "priority": "P4",
+      "status": "New",
+      "created_at": "2026-08-25T02:52:00",
+      "updated_at": "2026-09-10T18:29:00",
+      "user": {
+        "name": "Quinn Rodriguez",
+        "email": "quinn.rodriguez@company.com",
+        "team": "Finance",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 1,
+      "sla_minutes": 120,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Resolved by restarting the service."
+    },
+    {
+      "ticket_id": "REQ795753",
+      "title": "[REQUEST] User Access & Authentication: Problem - service mesh",
+      "description": "Request: Request custom report generation. Context: User Access & Authentication. Technical details: LDAP sync. Please let us know if you need additional information.",
+      "ticket_type": "Account Issue",
+      "service": "User Access & Authentication",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Pending",
+      "created_at": "2026-08-25T06:14:00",
+      "updated_at": "2026-08-30T12:03:00",
+      "user": {
+        "name": "Morgan Davis",
+        "email": "morgan.davis@company.com",
+        "team": "Marketing",
+        "location": "New York"
+      },
+      "tags": [
+        "staging",
+        "urgent",
+        "documentation"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "Dev Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SEC612772",
+      "title": "[DOWN] Email & Collaboration: Problem - 500 error",
+      "description": "Issue: Calendar sync breaking after DST change. Environment: Email & Collaboration. Additional details: spam filter. This is affecting our production environment.",
+      "ticket_type": "Configuration Change",
+      "service": "Email & Collaboration",
+      "severity": "Critical",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-08-28T09:47:00",
+      "updated_at": "2026-09-09T00:12:00",
+      "user": {
+        "name": "Jamie Williams",
+        "email": "jamie.williams@company.com",
+        "team": "Finance",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "integration"
+      ],
+      "attachments": 1,
+      "sla_minutes": 120,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "SRV997161",
+      "title": "[PROBLEM] Cloud Services (AWS/Azure/GCP): Question - API endpoint",
+      "description": "Request: Ask about upcoming feature release. Context: Cloud Services (AWS/Azure/GCP). Technical details: EC2 instance. This is affecting our production environment.",
+      "ticket_type": "Bug Report",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P3",
+      "status": "New",
+      "created_at": "2026-08-12T04:30:00",
+      "updated_at": "2026-08-22T05:26:00",
+      "user": {
+        "name": "Casey Garcia",
+        "email": "casey.garcia@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "database",
+        "urgent",
+        "integration"
+      ],
+      "attachments": 0,
+      "sla_minutes": 240,
+      "assigned_to": "Security Team",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "INC412818",
+      "title": "[EMERGENCY] Monitoring & Alerts: Request - 404 not found",
+      "description": "Issue: User session not persisting across requests. Environment: Monitoring & Alerts. Additional details: synthetic check. The issue started occurring today morning.",
+      "ticket_type": "Security Issue",
+      "service": "Monitoring & Alerts",
+      "severity": "Critical",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-08-28T04:53:00",
+      "updated_at": "2026-08-19T20:55:00",
+      "user": {
+        "name": "Casey Jones",
+        "email": "casey.jones@company.com",
+        "team": "Operations",
+        "location": "New York"
+      },
+      "tags": [
+        "documentation",
+        "urgent"
+      ],
+      "attachments": 2,
+      "sla_minutes": 30,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Ticket closed as resolved."
+    },
+    {
+      "ticket_id": "SEC752751",
+      "title": "[ERROR] Security Operations: Problem - 404 not found",
+      "description": "Issue: Network latency increased by 300%. Environment: Security Operations. Additional details: compliance. Please let us know if you need additional information.",
+      "ticket_type": "Service Request",
+      "service": "Security Operations",
+      "severity": "High",
+      "priority": "P4",
+      "status": "Resolved",
+      "created_at": "2026-08-17T15:18:00",
+      "updated_at": "2026-08-19T04:09:00",
+      "user": {
+        "name": "Jordan Brown",
+        "email": "jordan.brown@company.com",
+        "team": "Operations",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "integration",
+        "urgent"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "SEC754852",
+      "title": "[PROBLEM] Security Operations: Problem - 500 error",
+      "description": "Request: Ask about upcoming feature release. Context: Security Operations. Technical details: malware detection. This is a recurring problem that needs investigation.",
+      "ticket_type": "Feature Request",
+      "service": "Security Operations",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Resolved",
+      "created_at": "2026-08-19T18:22:00",
+      "updated_at": "2026-08-22T23:48:00",
+      "user": {
+        "name": "Parker Johnson",
+        "email": "parker.johnson@company.com",
+        "team": "Operations",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "security",
+        "api",
+        "documentation"
+      ],
+      "attachments": 1,
+      "sla_minutes": 240,
+      "assigned_to": "On-call Engineer",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "REQ960603",
+      "title": "[HELP] Database Services: Problem - session state",
+      "description": "Request: How do I reset my password?. Context: Database Services. Technical details: backup failure. This is affecting our production environment.",
+      "ticket_type": "Security Issue",
+      "service": "Database Services",
+      "severity": "Low",
+      "priority": "P2",
+      "status": "In Progress",
+      "created_at": "2026-09-11T18:53:00",
+      "updated_at": "2026-08-26T14:27:00",
+      "user": {
+        "name": "Jamie Martinez",
+        "email": "jamie.martinez@company.com",
+        "team": "Marketing",
+        "location": "Boston"
+      },
+      "tags": [
+        "database",
+        "security",
+        "urgent"
+      ],
+      "attachments": 1,
+      "sla_minutes": 60,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Fixed by updating the configuration."
+    },
+    {
+      "ticket_id": "PERF867669",
+      "title": "[P2] Network Infrastructure: Issue - 404 not found",
+      "description": "Request: Request to increase API rate limit. Context: Network Infrastructure. Technical details: switch port. Please let us know if you need additional information.",
+      "ticket_type": "Feature Request",
+      "service": "Network Infrastructure",
+      "severity": "Medium",
+      "priority": "P1",
+      "status": "In Progress",
+      "created_at": "2026-09-09T21:16:00",
+      "updated_at": "2026-08-29T05:49:00",
+      "user": {
+        "name": "Casey Garcia",
+        "email": "casey.garcia@company.com",
+        "team": "Marketing",
+        "location": "New York"
+      },
+      "tags": [
+        "documentation",
+        "urgent",
+        "security"
+      ],
+      "attachments": 1,
+      "sla_minutes": 1440,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "Root cause identified, fix in progress."
+    },
+    {
+      "ticket_id": "INC651463",
+      "title": "[HELP] Cloud Services (AWS/Azure/GCP): Request - 500 error",
+      "description": "Request: The API is returning errors. Context: Cloud Services (AWS/Azure/GCP). Technical details: Azure VM. We need this resolved as soon as possible.",
+      "ticket_type": "Configuration Change",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Low",
+      "priority": "P3",
+      "status": "Pending",
+      "created_at": "2026-09-04T18:37:00",
+      "updated_at": "2026-09-11T09:35:00",
+      "user": {
+        "name": "Taylor Davis",
+        "email": "taylor.davis@company.com",
+        "team": "Sales",
+        "location": "Austin"
+      },
+      "tags": [
+        "security"
+      ],
+      "attachments": 2,
+      "sla_minutes": 240,
+      "assigned_to": "John Doe",
+      "resolution_notes": null
+    },
+    {
+      "ticket_id": "SRV146645",
+      "title": "[BREACH] User Access & Authentication: Issue - 500 error",
+      "description": "Issue: API rate limiting is too aggressive. Environment: User Access & Authentication. Additional details: SSO failure. Please let us know if you need additional information.",
+      "ticket_type": "Security Issue",
+      "service": "User Access & Authentication",
+      "severity": "Critical",
+      "priority": "P1",
+      "status": "New",
+      "created_at": "2026-08-18T15:22:00",
+      "updated_at": "2026-09-01T05:01:00",
+      "user": {
+        "name": "Taylor Brown",
+        "email": "taylor.brown@company.com",
+        "team": "Finance",
+        "location": "Austin"
+      },
+      "tags": [
+        "staging",
+        "security",
+        "urgent"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Jane Smith",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "SEC566417",
+      "title": "[ERROR] Hardware Support: Request - middleware failure",
+      "description": "Issue: File upload failing with 413 error. Environment: Hardware Support. Additional details: hardware RAID. Please let us know if you need additional information.",
+      "ticket_type": "Account Issue",
+      "service": "Hardware Support",
+      "severity": "High",
+      "priority": "P3",
+      "status": "Resolved",
+      "created_at": "2026-08-15T17:17:00",
+      "updated_at": "2026-08-21T06:17:00",
+      "user": {
+        "name": "Riley Williams",
+        "email": "riley.williams@company.com",
+        "team": "HR",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "documentation"
+      ],
+      "attachments": 2,
+      "sla_minutes": 240,
+      "assigned_to": "Dev Team",
+      "resolution_notes": "User education provided."
+    },
+    {
+      "ticket_id": "LAT001234",
+      "title": "[SLOW] Database Services: High response latency on API endpoints",
+      "description": "Issue: API endpoints experiencing 3-5 second response times. Environment: Database Services. Additional details: query timeout. This is affecting our production environment. Database queries are taking too long to execute.",
+      "ticket_type": "Performance Issue",
+      "service": "Database Services",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-16T10:30:00",
+      "updated_at": "2026-10-16T14:45:00",
+      "user": {
+        "name": "Sam Thompson",
+        "email": "sam.thompson@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "latency",
+        "database",
+        "performance",
+        "production"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Database Team",
+      "resolution_notes": "Root cause: Missing indexes on frequently queried columns causing full table scans. Resolution: 1) Added composite index on user_id and timestamp columns for the primary query path. 2) Increased database connection pool size from 50 to 100 connections in the application configuration. 3) Implemented query result caching using Redis with 5-minute TTL for read-heavy endpoints. 4) Updated slow query logging threshold to 1 second to proactively identify future issues. Average response time reduced from 3.5s to 250ms."
+    },
+    {
+      "ticket_id": "LAT002345",
+      "title": "[SLOW] User Access & Authentication: Session state causing latency",
+      "description": "Issue: Authentication and session management operations experiencing high latency. Environment: User Access & Authentication. Additional details: session timeout, MFA authentication. Users are experiencing delays during login and session validation.",
+      "ticket_type": "Performance Issue",
+      "service": "User Access & Authentication",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-15T09:15:00",
+      "updated_at": "2026-10-15T16:30:00",
+      "user": {
+        "name": "Alex Rivera",
+        "email": "alex.rivera@company.com",
+        "team": "Operations",
+        "location": "Austin"
+      },
+      "tags": [
+        "latency",
+        "authentication",
+        "session",
+        "performance"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause: Session state stored in database without caching, causing repeated database hits. Resolution: 1) Implemented distributed caching layer using Redis for session storage with automatic failover. 2) Configured session TTL to 30 minutes with lazy expiration. 3) Added connection pooling to Redis with 20 connections per instance. 4) Optimized MFA token validation by caching public keys for JWT verification. 5) Implemented async session validation for non-critical endpoints. Authentication latency reduced from 800ms to 120ms."
+    },
+    {
+      "ticket_id": "LAT003456",
+      "title": "[SLOW] Network Infrastructure: Bandwidth congestion causing timeouts",
+      "description": "Issue: API requests timing out due to network latency issues. Environment: Network Infrastructure. Additional details: bandwidth congestion, packet loss. File uploads and large data transfers are particularly affected.",
+      "ticket_type": "Performance Issue",
+      "service": "Network Infrastructure",
+      "severity": "Critical",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-14T14:20:00",
+      "updated_at": "2026-10-14T20:00:00",
+      "user": {
+        "name": "Jordan Kim",
+        "email": "jordan.kim@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "latency",
+        "network",
+        "timeout",
+        "bandwidth"
+      ],
+      "attachments": 4,
+      "sla_minutes": 60,
+      "assigned_to": "Network Team",
+      "resolution_notes": "Root cause: Insufficient bandwidth and lack of traffic prioritization. Resolution: 1) Increased backbone bandwidth from 1Gbps to 10Gbps. 2) Implemented QoS (Quality of Service) policies to prioritize API traffic over bulk transfers. 3) Configured load balancer to use round-robin with health checks across multiple availability zones. 4) Added CDN for static assets to reduce network load. 5) Implemented TCP window scaling and keep-alive optimizations. Network latency reduced from 500ms to 45ms average."
+    },
+    {
+      "ticket_id": "LAT004567",
+      "title": "[SLOW] Cloud Services: Lambda function cold start latency",
+      "description": "Issue: Serverless functions experiencing high latency due to cold starts. Environment: Cloud Services (AWS/Azure/GCP). Additional details: Lambda function, API endpoint. Initial API calls taking 5-8 seconds while subsequent calls are fast.",
+      "ticket_type": "Performance Issue",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Resolved",
+      "created_at": "2026-10-13T11:00:00",
+      "updated_at": "2026-10-13T17:30:00",
+      "user": {
+        "name": "Taylor Chen",
+        "email": "taylor.chen@company.com",
+        "team": "DevOps",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "latency",
+        "serverless",
+        "cold-start",
+        "lambda"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Cloud Team",
+      "resolution_notes": "Root cause: Lambda functions going to sleep and requiring cold starts on each invocation. Resolution: 1) Configured provisioned concurrency for high-traffic functions (maintaining 5-10 warm instances). 2) Optimized function bundle size by removing unused dependencies, reducing from 50MB to 15MB. 3) Implemented function warming mechanism using scheduled CloudWatch events to ping functions every 4 minutes. 4) Moved to Lambda runtime with faster startup times (Python 3.11). 5) Added response caching at API Gateway level for idempotent operations. Cold start latency reduced from 6s to 200ms."
+    },
+    {
+      "ticket_id": "LAT005678",
+      "title": "[SLOW] Application Support: Cache invalidation causing performance degradation",
+      "description": "Issue: Application experiencing performance issues due to cache invalidation problems. Environment: Application Support. Additional details: cache invalidation, middleware failure. Stale data being served and cache hit ratio dropped from 95% to 40%.",
+      "ticket_type": "Performance Issue",
+      "service": "Application Support",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-12T08:45:00",
+      "updated_at": "2026-10-12T15:20:00",
+      "user": {
+        "name": "Morgan Patel",
+        "email": "morgan.patel@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "latency",
+        "cache",
+        "invalidation",
+        "performance"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Application Team",
+      "resolution_notes": "Root cause: Cache invalidation strategy was too aggressive, clearing entire cache on any data update. Resolution: 1) Implemented cache invalidation at key level rather than full cache flush. 2) Added cache tags for related data groups to invalidate only affected entries. 3) Implemented write-through caching pattern to keep cache fresh. 4) Added cache warming logic to pre-populate frequently accessed data after invalidation. 5) Configured cache expiration with sliding window TTL (30 minutes with 10-minute refresh on access). Cache hit ratio restored to 92% and average response time improved from 800ms to 150ms."
+    },
+    {
+      "ticket_id": "LAT006789",
+      "title": "[SLOW] Email & Collaboration: Slow email delivery due to queuing issues",
+      "description": "Issue: Email notifications experiencing delays of 10-15 minutes. Environment: Email & Collaboration. Additional details: SMTP relay, mail flow. Email queue backlog building up during peak hours.",
+      "ticket_type": "Performance Issue",
+      "service": "Email & Collaboration",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Resolved",
+      "created_at": "2026-10-11T13:30:00",
+      "updated_at": "2026-10-11T18:45:00",
+      "user": {
+        "name": "Casey Wong",
+        "email": "casey.wong@company.com",
+        "team": "Operations",
+        "location": "Remote"
+      },
+      "tags": [
+        "latency",
+        "email",
+        "queue",
+        "smtp"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Email Team",
+      "resolution_notes": "Root cause: Single-threaded email processing and lack of queue scaling. Resolution: 1) Implemented horizontal scaling of email worker processes from 1 to 8 workers. 2) Moved to Redis-backed job queue (Sidekiq/Bull) for better queue management. 3) Added exponential backoff and retry logic for failed deliveries (3 retries with 30s, 5min, 15min intervals). 4) Implemented batch email sending for non-critical notifications. 5) Added monitoring and alerting for queue depth (alert if >1000 messages). Email delivery latency reduced from 12 minutes to under 30 seconds."
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-10-16T12:00:00.000000",
+    "count": 106,
+    "description": "Merged synthetic tickets with latency fix examples for RAG testing",
+    "sources": [
+      "synthetic_tickets.json",
+      "latency_fix_tickets.json"
+    ]
+  }
+}

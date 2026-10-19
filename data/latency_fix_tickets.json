@@ -1,0 +1,177 @@
+{
+  "tickets": [
+    {
+      "ticket_id": "LAT001234",
+      "title": "[SLOW] Database Services: High response latency on API endpoints",
+      "description": "Issue: API endpoints experiencing 3-5 second response times. Environment: Database Services. Additional details: query timeout. This is affecting our production environment. Database queries are taking too long to execute.",
+      "ticket_type": "Performance Issue",
+      "service": "Database Services",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-16T10:30:00",
+      "updated_at": "2026-10-16T14:45:00",
+      "user": {
+        "name": "Sam Thompson",
+        "email": "sam.thompson@company.com",
+        "team": "Engineering",
+        "location": "Seattle"
+      },
+      "tags": [
+        "latency",
+        "database",
+        "performance",
+        "production"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Database Team",
+      "resolution_notes": "Root cause: Missing indexes on frequently queried columns causing full table scans. Resolution: 1) Added composite index on user_id and timestamp columns for the primary query path. 2) Increased database connection pool size from 50 to 100 connections in the application configuration. 3) Implemented query result caching using Redis with 5-minute TTL for read-heavy endpoints. 4) Updated slow query logging threshold to 1 second to proactively identify future issues. Average response time reduced from 3.5s to 250ms."
+    },
+    {
+      "ticket_id": "LAT002345",
+      "title": "[SLOW] User Access & Authentication: Session state causing latency",
+      "description": "Issue: Authentication and session management operations experiencing high latency. Environment: User Access & Authentication. Additional details: session timeout, MFA authentication. Users are experiencing delays during login and session validation.",
+      "ticket_type": "Performance Issue",
+      "service": "User Access & Authentication",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-15T09:15:00",
+      "updated_at": "2026-10-15T16:30:00",
+      "user": {
+        "name": "Alex Rivera",
+        "email": "alex.rivera@company.com",
+        "team": "Operations",
+        "location": "Austin"
+      },
+      "tags": [
+        "latency",
+        "authentication",
+        "session",
+        "performance"
+      ],
+      "attachments": 2,
+      "sla_minutes": 120,
+      "assigned_to": "Security Team",
+      "resolution_notes": "Root cause: Session state stored in database without caching, causing repeated database hits. Resolution: 1) Implemented distributed caching layer using Redis for session storage with automatic failover. 2) Configured session TTL to 30 minutes with lazy expiration. 3) Added connection pooling to Redis with 20 connections per instance. 4) Optimized MFA token validation by caching public keys for JWT verification. 5) Implemented async session validation for non-critical endpoints. Authentication latency reduced from 800ms to 120ms."
+    },
+    {
+      "ticket_id": "LAT003456",
+      "title": "[SLOW] Network Infrastructure: Bandwidth congestion causing timeouts",
+      "description": "Issue: API requests timing out due to network latency issues. Environment: Network Infrastructure. Additional details: bandwidth congestion, packet loss. File uploads and large data transfers are particularly affected.",
+      "ticket_type": "Performance Issue",
+      "service": "Network Infrastructure",
+      "severity": "Critical",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-14T14:20:00",
+      "updated_at": "2026-10-14T20:00:00",
+      "user": {
+        "name": "Jordan Kim",
+        "email": "jordan.kim@company.com",
+        "team": "Engineering",
+        "location": "Boston"
+      },
+      "tags": [
+        "latency",
+        "network",
+        "timeout",
+        "bandwidth"
+      ],
+      "attachments": 4,
+      "sla_minutes": 60,
+      "assigned_to": "Network Team",
+      "resolution_notes": "Root cause: Insufficient bandwidth and lack of traffic prioritization. Resolution: 1) Increased backbone bandwidth from 1Gbps to 10Gbps. 2) Implemented QoS (Quality of Service) policies to prioritize API traffic over bulk transfers. 3) Configured load balancer to use round-robin with health checks across multiple availability zones. 4) Added CDN for static assets to reduce network load. 5) Implemented TCP window scaling and keep-alive optimizations. Network latency reduced from 500ms to 45ms average."
+    },
+    {
+      "ticket_id": "LAT004567",
+      "title": "[SLOW] Cloud Services: Lambda function cold start latency",
+      "description": "Issue: Serverless functions experiencing high latency due to cold starts. Environment: Cloud Services (AWS/Azure/GCP). Additional details: Lambda function, API endpoint. Initial API calls taking 5-8 seconds while subsequent calls are fast.",
+      "ticket_type": "Performance Issue",
+      "service": "Cloud Services (AWS/Azure/GCP)",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Resolved",
+      "created_at": "2026-10-13T11:00:00",
+      "updated_at": "2026-10-13T17:30:00",
+      "user": {
+        "name": "Taylor Chen",
+        "email": "taylor.chen@company.com",
+        "team": "DevOps",
+        "location": "San Francisco"
+      },
+      "tags": [
+        "latency",
+        "serverless",
+        "cold-start",
+        "lambda"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Cloud Team",
+      "resolution_notes": "Root cause: Lambda functions going to sleep and requiring cold starts on each invocation. Resolution: 1) Configured provisioned concurrency for high-traffic functions (maintaining 5-10 warm instances). 2) Optimized function bundle size by removing unused dependencies, reducing from 50MB to 15MB. 3) Implemented function warming mechanism using scheduled CloudWatch events to ping functions every 4 minutes. 4) Moved to Lambda runtime with faster startup times (Python 3.11). 5) Added response caching at API Gateway level for idempotent operations. Cold start latency reduced from 6s to 200ms."
+    },
+    {
+      "ticket_id": "LAT005678",
+      "title": "[SLOW] Application Support: Cache invalidation causing performance degradation",
+      "description": "Issue: Application experiencing performance issues due to cache invalidation problems. Environment: Application Support. Additional details: cache invalidation, middleware failure. Stale data being served and cache hit ratio dropped from 95% to 40%.",
+      "ticket_type": "Performance Issue",
+      "service": "Application Support",
+      "severity": "High",
+      "priority": "P1",
+      "status": "Resolved",
+      "created_at": "2026-10-12T08:45:00",
+      "updated_at": "2026-10-12T15:20:00",
+      "user": {
+        "name": "Morgan Patel",
+        "email": "morgan.patel@company.com",
+        "team": "Engineering",
+        "location": "New York"
+      },
+      "tags": [
+        "latency",
+        "cache",
+        "invalidation",
+        "performance"
+      ],
+      "attachments": 3,
+      "sla_minutes": 240,
+      "assigned_to": "Application Team",
+      "resolution_notes": "Root cause: Cache invalidation strategy was too aggressive, clearing entire cache on any data update. Resolution: 1) Implemented cache invalidation at key level rather than full cache flush. 2) Added cache tags for related data groups to invalidate only affected entries. 3) Implemented write-through caching pattern to keep cache fresh. 4) Added cache warming logic to pre-populate frequently accessed data after invalidation. 5) Configured cache expiration with sliding window TTL (30 minutes with 10-minute refresh on access). Cache hit ratio restored to 92% and average response time improved from 800ms to 150ms."
+    },
+    {
+      "ticket_id": "LAT006789",
+      "title": "[SLOW] Email & Collaboration: Slow email delivery due to queuing issues",
+      "description": "Issue: Email notifications experiencing delays of 10-15 minutes. Environment: Email & Collaboration. Additional details: SMTP relay, mail flow. Email queue backlog building up during peak hours.",
+      "ticket_type": "Performance Issue",
+      "service": "Email & Collaboration",
+      "severity": "Medium",
+      "priority": "P2",
+      "status": "Resolved",
+      "created_at": "2026-10-11T13:30:00",
+      "updated_at": "2026-10-11T18:45:00",
+      "user": {
+        "name": "Casey Wong",
+        "email": "casey.wong@company.com",
+        "team": "Operations",
+        "location": "Remote"
+      },
+      "tags": [
+        "latency",
+        "email",
+        "queue",
+        "smtp"
+      ],
+      "attachments": 2,
+      "sla_minutes": 480,
+      "assigned_to": "Email Team",
+      "resolution_notes": "Root cause: Single-threaded email processing and lack of queue scaling. Resolution: 1) Implemented horizontal scaling of email worker processes from 1 to 8 workers. 2) Moved to Redis-backed job queue (Sidekiq/Bull) for better queue management. 3) Added exponential backoff and retry logic for failed deliveries (3 retries with 30s, 5min, 15min intervals). 4) Implemented batch email sending for non-critical notifications. 5) Added monitoring and alerting for queue depth (alert if >1000 messages). Email delivery latency reduced from 12 minutes to under 30 seconds."
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-10-16T12:00:00.000000",
+    "count": 6,
+    "description": "Additional tickets with detailed latency resolution strategies for RAG testing"
+  }
+}

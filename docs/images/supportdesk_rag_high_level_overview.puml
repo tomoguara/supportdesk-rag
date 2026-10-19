@@ -1,0 +1,50 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam backgroundColor white
+skinparam shadowing true
+skinparam defaultFontSize 14
+skinparam arrowFontSize 12
+
+title SupportDesk RAG — At a Glance
+
+actor "Incident Responder\n(user)" as user
+
+package "OFFLINE — build the index  (Stages 1–3)" #EAF6EA {
+  rectangle "Ticket Source\n(JSON / CSV / DB)" as src #FFFFFF
+  rectangle "1 · Ingest\nclean · chunk · dedupe" as s1 #FFFFFF
+  rectangle "2 · Embed\nvectorize (OpenAI / Ollama)" as s2 #FFFFFF
+}
+
+database "3 · Vector Store\nQdrant — vectors + metadata" as vdb #F5F5F5
+
+package "ONLINE — answer a question  (Stages 4–7)" #E1F0FA {
+  rectangle "4 · Hybrid Retrieve\nvector + BM25 + RRF" as s4 #FFFFFF
+  rectangle "5 · Re-rank\ncross-encoder" as s5 #FFFFFF
+  rectangle "6 · Ground\nassemble cited context" as s6 #FFFFFF
+  rectangle "7 · Generate\nLLM answer" as s7 #FFFFFF
+}
+
+rectangle "GUARD (wraps Generate)\ncitation check · relevance gate ·\nPII redact · refusal" as guard #FDF0E0
+rectangle "Observability + Evaluation\ntraces · metrics · quality" as obs #F5F5F5
+
+' Offline flow
+src --> s1 : raw tickets
+s1 --> s2 : clean chunks
+s2 --> vdb : vectors + metadata
+
+' Online flow
+user --> s4 : "How do I…?"
+vdb --> s4 : top-k candidates
+s4 --> s5 : fused results
+s5 --> s6 : top-n passages
+s6 --> s7 : grounded prompt
+s7 --> guard : answer + citations
+guard --> user : grounded answer\ncited to tickets
+
+' Cross-cutting
+s7 ..> obs : latency · tokens
+guard ..> obs : guard results
+user ..> obs : golden answers
+
+@enduml

@@ -1,0 +1,83 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam backgroundColor white
+skinparam shadowing true
+skinparam defaultFontSize 13
+skinparam arrowFontSize 12
+
+title SupportDesk RAG — Full System Architecture & Data Flow
+
+' ---------- Entry ----------
+actor "Incident Responder\n(user / automation)" as user
+component "CLI → sd-rag\n(answer · triage · similar · escalate\nrunbook · gap · bulk · evaluate)" as cli #F5F7FA
+
+user --> cli : question / ticket / command
+
+' ---------- Offline pipeline (top of spine) ----------
+package "OFFLINE — build the index  (Stages 1–3)" #EAF6EA {
+  component "Source\nJSON · CSV · DB" as src #FFFFFF
+  component "1 · Ingest (SupportDeskIngest)\nclean · PII strip · chunk · dedupe" as s1 #FFFFFF
+  component "2 · Embed (EmbeddingService)\nbatched vectorization" as s2 #FFFFFF
+}
+database "3 · Store — Qdrant (VectorStore)\ncosine vectors + metadata" as vdb #F5F5F5
+
+component "Qdrant vector index" as vidx #F5F5F5
+component "BM25 index\n(rank-bm25 + tiktoken)" as bm25 #F5F5F5
+
+' ---------- Online pipeline ----------
+package "ONLINE — answer a question  (Stages 4–7)" #E1F0FA {
+  component "4 · Retrieve (HybridRetriever)\nvector + BM25 + RRF fusion" as s4 #FFFFFF
+  component "5 · Re-rank (ReRanker)\ncross-encoder  (optional)" as s5 #FFFFFF
+  component "6 · Ground (ContextGrounding)\ncited context + token budget" as s6 #FFFFFF
+  component "7 · Generate (AnswerGenerator)\nLLM answer + [CITATION]" as s7 #FFFFFF
+}
+
+' ---------- Guard wraps Generate ----------
+rectangle "GUARD (wraps Stage 7)\ncitation verify · min-citation ·\nrelevance gate · refusal · PII redact" as guard #FDF0E0
+
+' ---------- Cross-cutting ----------
+package "Cross-cutting — observe & score" #FFFFFF {
+  component "Observability (RAGPipelineObserver)\ntraces · metrics · JSON logs" as obs #F5F5F5
+  component "Evaluation (Evaluator / EvaluationPipeline)\nrelevance · quality · hallucination" as evalm #F5F5F5
+}
+
+' ---------- External models ----------
+component "Embeddings\nOpenAI text-embedding-3 / Ollama" as emb #FFF7F0
+component "LLM\nOpenAI gpt-4o / Ollama llama3" as llm #FFF7F0
+
+' ---------- Spine: entry -> offline ----------
+cli --> src : ingest (sd-rag ingest)
+src --> s1 : raw tickets
+s1 --> s2 : clean chunks
+s2 --> vdb : vectors + metadata
+
+' ---------- Spine: store -> online ----------
+vdb --> vidx
+vidx --> s4 : semantic hits
+bm25 --> s4 : lexical hits
+s4 --> s5 : fused candidates
+s5 --> s6 : top-n passages
+s6 --> s7 : grounded prompt
+s7 --> guard : raw answer + citations
+guard --> user : validated, cited answer
+
+' ---------- CLI routes to online stages ----------
+cli ..> s4 : retrievable cmds (answer·similar·gap)
+cli ..> s6 : context cmds (triage·escalate·runbook)
+cli ..> s7 : evaluate (golden answer)
+
+' ---------- Models ----------
+s2 -[#666]-> emb : embed()
+s4 -[#666]-> emb : embed query
+s7 -[#666]-> llm : chat.completions()
+s5 -[#999]-> emb : (optional cross-encoder)
+
+' ---------- Cross-cutting links ----------
+s7 ..> obs : latency · tokens · cost
+guard ..> obs : guard checks
+obs ..> evalm : metrics feed
+evalm ..> s7 : quality score
+user ..> evalm : golden answers
+
+@enduml
