@@ -64,13 +64,42 @@ OPENAI_API_KEY=sk-...
 
 ### Required Services
 
+The system uses **Qdrant** as the vector database for storing and retrieving embeddings. Make sure Qdrant is running before using the system.
+
+#### Starting Qdrant
+
 ```bash
-# Start Qdrant vector database (in another terminal)
+# Start Qdrant container (in another terminal)
 ./scripts/qdrant-db.sh --start
+
+# Wait for Qdrant to be ready (optional, auto-waits up to 30 seconds)
+./scripts/qdrant-db.sh --wait
 
 # Check status
 ./scripts/qdrant-db.sh --status
+
+# Stop Qdrant when done
+./scripts/qdrant-db.sh --stop
 ```
+
+#### Database Setup and Data Ingestion
+
+Before you can answer questions, you need to load your ticket data into the vector database:
+
+```bash
+# Ingest tickets from the synthetic tickets file
+sd-rag ingest --data-path data/synthetic_tickets.json
+
+# For custom tickets, use your own JSON file with the same structure
+sd-rag ingest --data-path data/your-tickets.json
+
+# Wipe and re-ingest data (clears existing data first)
+sd-rag ingest --data-path data/synthetic_tickets.json --wipe
+```
+
+**Data Format**: Your tickets file should be a JSON file with a `tickets` array containing ticket objects. Each ticket should have fields like `ticket_id`, `title`, `description`, `service`, `severity`, and `status`. See `data/synthetic_tickets.json` for the complete schema.
+
+**Note**: If you see `Connection refused` errors, ensure Qdrant is running first with `./scripts/qdrant-db.sh --start`.
 
 ---
 
